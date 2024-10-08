@@ -7,7 +7,7 @@
     "beforeDevCommand": "yarn dev",
     "devUrl": "http://localhost:9000",
     "beforeBuildCommand": "yarn build",
-    "frontendDist": "../dist"
+    "frontendDist": "../dist/spa"
   },
   "app": {
     "windows": [
