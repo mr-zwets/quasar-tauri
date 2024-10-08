@@ -1,4 +1,4 @@
-# Quasar App (quasar-project)
+# Quasar Tauri
 
 A Quasar Project
 

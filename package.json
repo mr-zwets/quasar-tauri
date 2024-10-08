@@ -1,23 +1,26 @@
 {
-  "name": "quasar-project",
+  "name": "quasar-tauri",
   "version": "0.0.1",
-  "description": "A Quasar Project",
-  "productName": "Quasar App",
+  "description": "A Quasar + Tauri Project",
+  "productName": "Quasar Tauri",
   "author": "",
   "type": "module",
   "private": true,
   "scripts": {
-    "lint": "eslint --ext .js,.ts,.vue ./",
-    "format": "prettier --write \"**/*.{js,ts,vue,css,html,md,json}\" --ignore-path .gitignore",
-    "test": "echo \"No test specified\" && exit 0",
     "dev": "quasar dev",
-    "build": "quasar build"
+    "build": "quasar build",
+    "tauri:prod": "tauri",
+    "tauri:prod:init": "yarn tauri:prod init",
+    "tauri:prod:dev": "yarn tauri:prod dev",
+    "tauri:prod:build": "yarn tauri:prod build"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
     "quasar": "^2.16.0",
     "vue": "^3.4.18",
-    "vue-router": "^4.0.12"
+    "vue-router": "^4.0.12",
+    "@tauri-apps/api": ">=2.0.0",
+    "@tauri-apps/plugin-shell": ">=2.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.16.0",
@@ -31,7 +34,8 @@
     "@types/node": "^20.5.9",
     "@quasar/app-vite": "^2.0.0-beta.12",
     "autoprefixer": "^10.4.2",
-    "typescript": "~5.5.3"
+    "typescript": "~5.5.3",
+    "@tauri-apps/cli": ">=2.0.0"
   },
   "engines": {
     "node": "^24 || ^22 || ^20 || ^18",
