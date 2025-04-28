@@ -9,10 +9,7 @@
   "scripts": {
     "dev": "quasar dev",
     "build": "quasar build",
-    "tauri:prod": "tauri",
-    "tauri:prod:init": "yarn tauri:prod init",
-    "tauri:prod:dev": "yarn tauri:prod dev",
-    "tauri:prod:build": "yarn tauri:prod build"
+    "tauri": "tauri"
   },
   "dependencies": {
     "@quasar/extras": "^1.16.4",
